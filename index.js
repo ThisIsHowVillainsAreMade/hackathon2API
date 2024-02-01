@@ -17,6 +17,7 @@ const articles = [
     img: "",
     alt: "",
     price: "",
+    description: "",
   },
   {
     id: 2,
@@ -24,6 +25,7 @@ const articles = [
     img: "",
     alt: "",
     price: "",
+    description: "",
   },
   {
     id: 3,
@@ -31,6 +33,7 @@ const articles = [
     img: "",
     alt: "",
     price: "",
+    description: "",
   },
   {
     id: 4,
@@ -38,6 +41,7 @@ const articles = [
     img: "",
     alt: "",
     price: "",
+    description: "",
   },
   {
     id: 5,
@@ -45,6 +49,7 @@ const articles = [
     img: "",
     alt: "",
     price: "",
+    description: "",
   },
   {
     id: 6,
@@ -52,6 +57,7 @@ const articles = [
     img: "",
     alt: "",
     price: "",
+    description: "",
   },
   {
     id: 7,
@@ -59,6 +65,7 @@ const articles = [
     img: "",
     alt: "",
     price: "",
+    description: "",
   },
   {
     id: 8,
@@ -66,6 +73,7 @@ const articles = [
     img: "",
     alt: "",
     price: "",
+    description: "",
   },
   {
     id: 9,
@@ -73,6 +81,7 @@ const articles = [
     img: "",
     alt: "",
     price: "",
+    description: "",
   },
   {
     id: 10,
@@ -80,6 +89,7 @@ const articles = [
     img: "",
     alt: "",
     price: "",
+    description: "",
   },
   {
     id: 11,
@@ -87,6 +97,7 @@ const articles = [
     img: "",
     alt: "",
     price: "",
+    description: "",
   },
   {
     id: 12,
@@ -94,6 +105,7 @@ const articles = [
     img: "",
     alt: "",
     price: "",
+    description: "",
   },
   {
     id: 13,
@@ -101,6 +113,7 @@ const articles = [
     img: "",
     alt: "",
     price: "",
+    description: "",
   },
   {
     id: 14,
@@ -108,6 +121,7 @@ const articles = [
     img: "",
     alt: "",
     price: "",
+    description: "",
   },
   {
     id: 15,
@@ -115,6 +129,7 @@ const articles = [
     img: "",
     alt: "",
     price: "",
+    description: "",
   },
   {
     id: 16,
@@ -122,6 +137,7 @@ const articles = [
     img: "",
     alt: "",
     price: "",
+    description: "",
   },
   {
     id: 17,
@@ -129,6 +145,7 @@ const articles = [
     img: "",
     alt: "",
     price: "",
+    description: "",
   },
   {
     id: 18,
@@ -136,6 +153,7 @@ const articles = [
     img: "",
     alt: "",
     price: "",
+    description: "",
   },
   {
     id: 19,
@@ -143,6 +161,7 @@ const articles = [
     img: "",
     alt: "",
     price: "",
+    description: "",
   },
   {
     id: 20,
@@ -150,6 +169,7 @@ const articles = [
     img: "",
     alt: "",
     price: "",
+    description: "",
   },
 ];
 
