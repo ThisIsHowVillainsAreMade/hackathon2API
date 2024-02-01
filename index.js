@@ -9,12 +9,14 @@ const port = process.env.PORT || 7777;
 app.use(cors("*"));
 
 app.use("/articles", express.static(path.join(__dirname, "./articles")));
+app.use("/images", express.static(path.join(__dirname, "assets")));
+
 
 const articles = [
   {
     id: 1,
     item: "Fusil Mitrailleur de Tyr",
-    img: "./assets/ak47viking.png",
+    img: "./images/ak47viking.png",
     alt: "fusil mitrailleur runique",
     price: "630.99 DC",
     description:
@@ -23,7 +25,7 @@ const articles = [
   {
     id: 2,
     item: "Forge de Muspell",
-    img: "./assets/barbecue-on-grey-background-32k-uhd-ultra-realistic-style-54336279.png",
+    img: "./images/barbecue-on-grey-background-32k-uhd-ultra-realistic-style-54336279.png",
     alt: "barbecue",
     price: "44.99 DC",
     description:
@@ -32,7 +34,7 @@ const articles = [
   {
     id: 3,
     item: "Javelot de Thor",
-    img: "./assets/bazooka.png",
+    img: "./images/bazooka.png",
     alt: "bazooka avec des runes",
     price: "859.99 DC",
     description:
@@ -41,7 +43,7 @@ const articles = [
   {
     id: 4,
     item: "Drakkar d'Aegir",
-    img: "./assets/drakkar.png",
+    img: "./images/drakkar.png",
     alt: "enorme drakkar viking",
     price: "148999.99 DC",
     description:
@@ -50,7 +52,7 @@ const articles = [
   {
     id: 5,
     item: "Robe de l'Étoile du Nord ",
-    img: "./assets/dress-on-a-grey-background-32k-uhd-ultra-realistic-style-328211277.png",
+    img: "./images/dress-on-a-grey-background-32k-uhd-ultra-realistic-style-328211277.png",
     alt: "petite robe noire",
     price: "29.99 DC",
     description:
@@ -59,7 +61,7 @@ const articles = [
   {
     id: 6,
     item: "Baume de Sif",
-    img: "./assets/gradient-lotion-on-a-grey-background-32k-uhd-ultra-realistic-style-992581392.png",
+    img: "./images/gradient-lotion-on-a-grey-background-32k-uhd-ultra-realistic-style-992581392.png",
     alt: "lotion pour lustrer les crânes chauves",
     price: "19.99 DC",
     description:
@@ -68,7 +70,7 @@ const articles = [
   {
     id: 7,
     item: "Coffret d'Idunn",
-    img: "./assets/grinder.png",
+    img: "./images/grinder.png",
     alt: "boîte avec des motifs vikings",
     price: "27.99 DC",
     description:
@@ -77,7 +79,7 @@ const articles = [
   {
     id: 8,
     item: "Pistolet Runique de Freyr",
-    img: "./assets/gunViking.png",
+    img: "./images/gunViking.png",
     alt: "pistolet hache",
     price: "1789.99 DC",
     description:
@@ -86,7 +88,7 @@ const articles = [
   {
     id: 9,
     item: "Hache de Skírnir",
-    img: "./assets/hache.png",
+    img: "./images/hache.png",
     alt: "hache",
     price: "114.99 DC",
     description:
@@ -95,7 +97,7 @@ const articles = [
   {
     id: 10,
     item: "Char de Loki",
-    img: "./assets/kebab.png",
+    img: "./images/kebab.png",
     alt: "camion frites kebab salade tomates oignons",
     price: "3799.99 DC",
     description:
@@ -104,7 +106,7 @@ const articles = [
   {
     id: 11,
     item: "Souffle de Surtr ",
-    img: "./assets/lance-feu.png",
+    img: "./images/lance-feu.png",
     alt: "lance flammes",
     price: "795.99 DC",
     description:
@@ -113,7 +115,7 @@ const articles = [
   {
     id: 12,
     item: "Baume de Frigg",
-    img: "./assets/lipstick-on-grey-background-with-runs-viking-32k-uhd-ultra-realistic-style-535674730.png",
+    img: "./images/lipstick-on-grey-background-with-runs-viking-32k-uhd-ultra-realistic-style-535674730.png",
     alt: "rouge à levre",
     price: "37.99 DC",
     description:
@@ -122,7 +124,7 @@ const articles = [
   {
     id: 13,
     item: "Calice d'Odin",
-    img: "./assets/machineAlaverLePAL.png",
+    img: "./images/machineAlaverLePAL.png",
     alt: "machine a laver viking",
     price: "315,99 DC",
     description:
@@ -131,7 +133,7 @@ const articles = [
   {
     id: 14,
     item: "Élixir de Heimdall",
-    img: "./assets/medical-spray-grey-background-with-runs-viking-32k-uhd-ultra-realistic-style-116990779.png",
+    img: "./images/medical-spray-grey-background-with-runs-viking-32k-uhd-ultra-realistic-style-116990779.png",
     alt: "spray antiseptique",
     price: "31.99 DC",
     description:
@@ -140,7 +142,7 @@ const articles = [
   {
     id: 15,
     item: "Cape de Dvalin",
-    img: "./assets/mouton.png",
+    img: "./images/mouton.png",
     alt: "moumoute pour chauves",
     price: "499.99 DC",
     description:
@@ -149,7 +151,7 @@ const articles = [
   {
     id: 16,
     item: "Essence de Idunn",
-    img: "./assets/perfume-grey-background-with-runs-viking-32k-uhd-ultra-realistic-style-786186131.png",
+    img: "./images/perfume-grey-background-with-runs-viking-32k-uhd-ultra-realistic-style-786186131.png",
     alt: "parfum pour viking puant",
     price: "91.99 DC",
     description:
@@ -158,7 +160,7 @@ const articles = [
   {
     id: 17,
     item: "Disque de Freyr ",
-    img: "./assets/pizza-on-grey--32k-uhd-ultra-realistic-style-150336464.png",
+    img: "./images/pizza-on-grey--32k-uhd-ultra-realistic-style-150336464.png",
     alt: "pizza viking",
     price: "9.99 DC",
     description:
@@ -167,7 +169,7 @@ const articles = [
   {
     id: 18,
     item: "Héraut des Sagas ",
-    img: "./assets/radio-grey-background-with-runs-viking-32k-uhd-ultra-realistic-style-397056440.png",
+    img: "./images/radio-grey-background-with-runs-viking-32k-uhd-ultra-realistic-style-397056440.png",
     alt: "radio viking",
     price: "49.99 DC",
     description:
@@ -176,7 +178,7 @@ const articles = [
   {
     id: 19,
     item: "Charrette de Forseti",
-    img: "./assets/sac.png",
+    img: "./images/sac.png",
     alt: "sac avec des roulettes",
     price: "349.99 DC",
     description:
@@ -185,7 +187,7 @@ const articles = [
   {
     id: 20,
     item: "Bâtonnet des Dents d'Yggdrasil",
-    img: "./assets/toothbrush-on-a-grey-background-32k-uhd-ultra-realistic-style-513486563.png",
+    img: "./images/toothbrush-on-a-grey-background-32k-uhd-ultra-realistic-style-513486563.png",
     alt: "Brosse à dents",
     price: "9.99 DC",
     description:
@@ -194,7 +196,7 @@ const articles = [
   {
     id: 21,
     item: "QuackNade",
-    img: "./assets/toothbrush-on-a-grey-background-32k-uhd-ultra-realistic-style-513486563.png",
+    img: "./images/QuackNade.png",
     alt: "grenade canard, notre produit phare",
     price: "199.99 DC",
     description:
